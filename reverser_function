@@ -1,0 +1,12 @@
+list = [[1, 2], [3, 4], [5, 6, 7]]   # a given list containing other lists inside.
+
+def rev(x):  * defining the reversing function.
+    for i in x:   # for each element of given list (x)
+        x.sort(reverse = True)   #to reverse the objects regardless of whether they are lists or integers.
+        if isinstance (i, type(list)):  #also to reverse the objects if the element is a list type object.
+            rev(i)
+        
+    return list
+    
+    
+    www.patika.dev
